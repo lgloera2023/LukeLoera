@@ -1,0 +1,162 @@
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 7vh 1fr 11vh;
+    overflow: hidden;
+    background-color: black;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+    "marines marines swim swim bike bike run run"
+    "marines marines swim swim bike bike run run"
+    "marines marines tri tri tri tri tri tri"
+    "marines marines acc acc acc brkawy brkawy brkawy"
+    "cTech cTech acc acc acc brkawy brkawy brkawy"
+    "cTech cTech famLeg famLeg famLeg famLeg cComGroup cComGroup";
+    grid-gap: 1vh 0.5vw;
+    padding-top: 4.7vh;
+    padding-bottom: 1vh;
+}
+
+#title_box {
+    position: relative;
+    top: 0;
+    padding-top: 0.5vh;
+}
+
+#marines {
+    background-image: url('marinesActivities.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    grid-area: marines;
+}
+
+#marines h2 {
+    text-align: center;
+    color: white;
+    text-decoration-line: underline;
+    background-color: black;
+}
+
+#swim {
+    background-image: url('swim.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    grid-area: swim;
+}
+
+#swim h1 {
+    text-align: center;
+    color: white;
+    text-decoration-line: underline;
+    font-style: italic;
+}
+
+#bike {
+    background-image: url('bike.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    grid-area: bike;
+}
+
+#bike h1 {
+    text-align: center;
+    color: white;
+    text-decoration-line: underline;
+    font-style: italic;
+}
+
+#run {
+    background-image: url('run.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    grid-area: run;
+}
+
+#run h1 {
+    text-align: center;
+    color: white;
+    text-decoration-line: underline;
+    font-style: italic;
+}
+
+#tri { 
+    background-image: url('zebra.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    grid-area: tri;
+}
+
+#tri h1 {
+    text-align: center;
+    color: white;
+    font-style: italic;
+    background-color: black;
+}
+
+#acc { 
+    background-image: url('acc.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    grid-area: acc;
+}
+
+#acc h1 {
+    text-align: center;
+    color: maroon;
+    text-transform: uppercase;
+}
+
+#brkawy {
+    background-image: url('brkawy.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    grid-area: brkawy;
+}
+
+#brkawy h1 {
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+#cTech {
+    background-image: url('cTech.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    grid-area: cTech;
+}
+
+#cTech h1 {
+    text-align: center;
+    color: #80d8ff;
+    background-color: #17141d;
+}
+
+#famLeg {
+    background-image: url('famLeg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    grid-area: famLeg;
+}
+
+#cComGroup {
+    background-image: url('cComGroup.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    grid-area: cComGroup;
+}

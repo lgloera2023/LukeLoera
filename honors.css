@@ -1,0 +1,91 @@
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 7vh 1fr 11vh;
+    overflow: hidden;
+    background-color: #17141d;
+}
+
+main {
+    margin-top: 5vh;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 1vh;
+    box-sizing: border-box;
+}
+
+section {
+    position: absolute;
+    width: 98.75vw;
+    height: 75vh;
+    display: flex;
+    border: 2px solid #000;
+}
+
+section .slide {
+    position: relative;
+    background: #0f0;
+    height: 100%;
+    flex: 1;
+    border-right: 2px solid #000;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+section .slide:last-child {
+    border-right: none;
+}
+
+section .slide:nth-child(1) {
+    background: url('marineSquad.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section .slide:nth-child(2) {
+    background: url('hispanicScholar.jpg');
+    background-position: left center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section .slide:nth-child(3) {
+    background: url('presidentScholar.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section .slide:nth-child(4) {
+    background: url('hlsr.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section .slide:hover {
+    flex-grow: 5;
+}
+
+section .slide .content {
+    position: absolute;
+    bottom: 0;
+    margin: 40px;
+    padding: 30px;
+    background: #000;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.0s;
+    transform: translateY(100px);
+}
+
+section .slide:hover .content {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+    transform: translateY(0);
+
+}

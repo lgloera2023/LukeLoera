@@ -1,0 +1,253 @@
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 7vh 1fr 11vh;
+    overflow: hidden;
+    background-color: #17141d;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.5em 0.5em;
+    padding-top: 5vh;
+    padding-bottom: 1.5vh;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+}
+
+#circle {
+    z-index: 4;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    height: 45vh;
+    width: 45vh;
+    background-color: black;
+    border-radius: 50%;
+    border: 5px solid maroon;
+    transition: opacity 250ms linear 250ms;
+}
+
+#subCircle_soldering {
+    z-index: 3;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    height: 45vh;
+    width: 45vh;
+    background-color: black;
+    background-image: url('soldering.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 50%;
+    border: 5px solid maroon;
+}
+
+#subCircle_scuba {
+    z-index: 3;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    height: 45vh;
+    width: 45vh;
+    background-color: black;
+    background-image: url('scuba.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 50%;
+    border: 5px solid maroon;
+}
+
+#skill {
+    align-self: center;
+}
+
+#skill h1 {
+    font-size: 6vh;
+    text-align: center;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(wheat, maroon);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#cppLogo {
+    z-index: 0;
+    position: absolute;
+    align-self: center;
+    height: 45vh;
+    width: 45vh;
+    background-color: white;
+    background-image: url('cppLogo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 50%;
+    border: 5px solid maroon;
+    visibility: hidden;
+    animation: cycle1 6s linear infinite;
+}
+
+#pythonLogo {
+    z-index: 0;
+    position: absolute;
+    align-self: center;
+    height: 45vh;
+    width: 45vh;
+    background-color: white;
+    background-image: url('pythonLogo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 50%;
+    border: 5px solid maroon;
+    visibility: hidden;
+    animation: cycle2 6s linear infinite;
+}
+
+#htmlLogo {
+    z-index: 0;
+    position: absolute;
+    align-self: center;
+    height: 45vh;
+    width: 45vh;
+    background-color: white;
+    background-image: url('htmlLogo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 50%;
+    border: 5px solid maroon;
+    visibility: hidden;
+    animation: cycle3 6s linear infinite;
+}
+
+#cssLogo {
+    z-index: 0;
+    position: absolute;
+    align-self: center;
+    height: 45vh;
+    width: 45vh;
+    background-color: white;
+    background-image: url('cssLogo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 50%;
+    border: 5px solid maroon;
+    visibility: hidden;
+    animation: cycle4 6s linear infinite;
+}
+
+#wordLogo {
+    z-index: 0;
+    position: absolute;
+    align-self: center;
+    height: 45vh;
+    width: 45vh;
+    background-color: white;
+    background-image: url('wordLogo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 50%;
+    border: 5px solid maroon;
+    visibility: hidden;
+    animation: cycle1 6s linear infinite;
+}
+
+#excelLogo {
+    z-index: 0;
+    position: absolute;
+    align-self: center;
+    height: 45vh;
+    width: 45vh;
+    background-color: white;
+    background-image: url('excelLogo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 50%;
+    border: 5px solid maroon;
+    visibility: hidden;
+    animation: cycle2 6s linear infinite;
+}
+
+#powerPointLogo {
+    z-index: 0;
+    position: absolute;
+    align-self: center;
+    height: 45vh;
+    width: 45vh;
+    background-color: white;
+    background-image: url('powerPointLogo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 50%;
+    border: 5px solid maroon;
+    visibility: hidden;
+    animation: cycle3 6s linear infinite;
+}
+
+#accessLogo {
+    z-index: 0;
+    position: absolute;
+    align-self: center;
+    height: 45vh;
+    width: 45vh;
+    background-color: white;
+    background-image: url('accessLogo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 50%;
+    border: 5px solid maroon;
+    visibility: hidden;
+    animation: cycle4 6s linear infinite;
+}
+
+#circle:hover {
+    opacity: 0;
+}
+
+@keyframes  cycle1 {
+    0% {visibility: visible;}
+    25% {visibility: visible;}
+    50% {visibility: hidden;}
+    75% {visibility: hidden;}
+    100% {visibility: hidden;}
+}
+
+@keyframes cycle2 {
+    0% {visibility: hidden;}
+    25% {visibility: hidden;}
+    50% {visibility: visible;}
+    75% {visibility: hidden;}
+    100% {visibility: hidden;}
+}
+
+@keyframes cycle3 {
+    0% {visibility: hidden;}
+    25% {visibility: hidden;}
+    50% {visibility: hidden;}
+    75% {visibility: visible;}
+    100% {visibility: hidden;}
+}
+
+@keyframes cycle4 {
+    0% {visibility: hidden;}
+    25% {visibility: hidden;}
+    50% {visibility: hidden;}
+    75% {visibility: hidden;}
+    100% {visibility: visible;}
+}

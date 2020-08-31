@@ -1,0 +1,114 @@
+header {
+    margin: 0;
+    height: 10vh;
+    background-color:wheat;
+    color: maroon;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-end;
+}
+
+#navbar{
+    width: 99.7%;
+    height: 10vh;
+    display: table;
+    margin: auto;
+    z-index: 2;
+    border-color:maroon;
+    border-style: groove;
+    border-width: 3px;
+    background-color:burlywood;
+    position: sticky;
+    top: 0;
+}
+#navlinks ul {
+    display: table;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#navlinks li {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 100%/7;
+}
+
+#navlinks a {
+    text-decoration: none;
+    color: white;
+    font-size: xx-large;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition-property: color;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+}
+  
+#navlinks li:hover a{
+    color: maroon;
+}
+
+#footbar {
+    margin: 0;
+    height: 8vh;
+    width: 99.7%;
+    display: table;
+    border-color: burlywood;
+    border-style: groove;
+    border-width: 3px;
+    background-color: maroon;
+    bottom: 3px;
+}
+
+#footlinks ul {
+    display: table;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    align-self: center;
+}
+
+#footlinks li {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 20%;
+    color: white;
+}
+#footlinks a {
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.bar_nav {
+    position: relative;
+    bottom: 100%;
+    left: 20%;
+    height: 4px;
+    width: 78%;
+    display: flex;
+}
+
+.filledbar_nav {
+    position: relative;
+    bottom: 100%;
+    z-index: 3;
+    width: 0px;
+    height: 100%;
+    background: maroon;
+    transition: 0.4s ease-out;
+}
+
+#navlinks li:hover .filledbar_nav {
+    width: 78%;
+}

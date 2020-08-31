@@ -1,0 +1,97 @@
+body {
+    overflow: hidden;
+}
+
+main {
+    position: absolute;
+    height: 450px;
+    width: 1350px;
+    top: 20%;
+    left: calc(25% - 300px);
+    display: flex;
+}
+
+.card {
+  display: flex;
+  height: 420px;
+  width: 450px;
+  background-color: #17141d;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+/*   margin-left: -50px; */
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+}
+
+.card:not(:first-child) {
+    margin-left: -50px;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+.card:hover ~ .card {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+
+.title {
+  color: wheat;
+  font-weight: 300;
+  position: absolute;
+  left: 20px;
+  top: 5px;
+}
+
+.bar {
+  position: absolute;
+  top: 55px;
+  left: 20px;
+  height: 5px;
+  width: 150px;
+}
+
+.emptybar {
+  background-color: #2e3033;
+  width: 100%;
+  height: 100%;
+}
+
+.filledbar {
+  position: absolute;
+  top: 0px;
+  z-index: 3;
+  width: 0px;
+  height: 100%;
+  background: white;
+  background: linear-gradient(90deg, black 0%, maroon 55%, wheat 100%);
+  transition: 0.6s ease-out;
+}
+
+.card:hover .filledbar {
+  width: 150px;
+  transition: 0.4s ease-out;
+}
+
+.card ul {
+  align-self: flex-end;
+  padding-bottom: 1.5em;
+  color: wheat;
+}
+
+.card li {
+  font-size: large;
+  padding-bottom: 1.25em;
+  padding-right: 0.5em;
+}
+
+.gradient_text {
+  font-weight: bold;
+  background: -webkit-radial-gradient(wheat, maroon);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
