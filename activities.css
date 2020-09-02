@@ -59,7 +59,7 @@ main {
 }
 
 #bike {
-    background-image: url('bike.jpg');
+    background-image: url('bike.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
