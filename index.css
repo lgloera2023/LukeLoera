@@ -42,11 +42,13 @@ main {
 .text_box {
     position: absolute;
     z-index: 1;
-    height: 20vh;
+    height: auto;
+    max-height: 35%;
+    overflow-y: auto;
     width: auto;
     margin: 10px;
     bottom: 0;
-    font-size: 100%;
+    font-size: medium;
     text-align: center;
     color: white;
     opacity: 0;
