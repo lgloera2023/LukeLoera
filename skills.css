@@ -94,7 +94,7 @@ main {
     border-radius: 50%;
     border: 5px solid maroon;
     visibility: hidden;
-    animation: cycle1 6s linear infinite;
+    animation: cycle1 4s linear infinite;
 }
 
 #pythonLogo {
@@ -111,7 +111,7 @@ main {
     border-radius: 50%;
     border: 5px solid maroon;
     visibility: hidden;
-    animation: cycle2 6s linear infinite;
+    animation: cycle2 4s linear infinite;
 }
 
 #htmlLogo {
@@ -128,7 +128,7 @@ main {
     border-radius: 50%;
     border: 5px solid maroon;
     visibility: hidden;
-    animation: cycle3 6s linear infinite;
+    animation: cycle3 4s linear infinite;
 }
 
 #cssLogo {
@@ -145,7 +145,7 @@ main {
     border-radius: 50%;
     border: 5px solid maroon;
     visibility: hidden;
-    animation: cycle4 6s linear infinite;
+    animation: cycle4 4s linear infinite;
 }
 
 #wordLogo {
@@ -162,7 +162,7 @@ main {
     border-radius: 50%;
     border: 5px solid maroon;
     visibility: hidden;
-    animation: cycle1 6s linear infinite;
+    animation: cycle1 4s linear infinite;
 }
 
 #excelLogo {
@@ -179,7 +179,7 @@ main {
     border-radius: 50%;
     border: 5px solid maroon;
     visibility: hidden;
-    animation: cycle2 6s linear infinite;
+    animation: cycle2 4s linear infinite;
 }
 
 #powerPointLogo {
@@ -196,7 +196,7 @@ main {
     border-radius: 50%;
     border: 5px solid maroon;
     visibility: hidden;
-    animation: cycle3 6s linear infinite;
+    animation: cycle3 4s linear infinite;
 }
 
 #accessLogo {
@@ -213,7 +213,7 @@ main {
     border-radius: 50%;
     border: 5px solid maroon;
     visibility: hidden;
-    animation: cycle4 6s linear infinite;
+    animation: cycle4 4s linear infinite;
 }
 
 #circle:hover {
